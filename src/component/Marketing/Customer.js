@@ -77,9 +77,9 @@ class Customer extends Component {
             })
         }
 
-        display = ComissionData.map(displaydata => {
+        display = ComissionData.map((displaydata, key) => {
             return (
-                <tr>
+                <tr key={key}>
                     <td>{displaydata.Name}</td>
                     <td>{displaydata.Comission} Rs</td>
                 </tr>
